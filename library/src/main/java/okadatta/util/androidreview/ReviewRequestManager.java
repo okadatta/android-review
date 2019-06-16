@@ -17,8 +17,8 @@ public class ReviewRequestManager {
     // Values for deciding whether request review or not
     private int launchCountThreshold = 100;         // Request review if your app is launched for greater than or equals to this times since installation
     private int daysSinceFirstLaunch = 14;          // Request review if greater than or equals to this days has passed since the first launch
-    private int recentLaunchesCount = 30;              // Request review if your app has been launched for greater than or equals to this times during specified period
-    private int daysForCountRecentLaunches = 21;       // Specify the period for counting recent app launch
+    private int recentLaunchesCount = 30;           // Request review if your app has been launched for greater than or equals to this times during specified period
+    private int daysForCountRecentLaunches = 21;    // Specify the period for counting recent app launch
     private int daysSinceLastReview = 365;          // Request review if greater than or equals to this days has passed since the last review by a user
     private int daysSinceLastReviewRequest = 180;   // Request review if greater than or equals to this days has passed since the last review request
 
