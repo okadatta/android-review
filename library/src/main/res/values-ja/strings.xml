@@ -1,0 +1,18 @@
+<resources>
+    <string name="rateDialogTitle">よろしければアプリの評価をお聞かせください</string>
+    <string name="rateButton">決定</string>
+    <string name="rateCancelButton">断る</string>
+    <string name="rateAtLeastOneStar">評価は1～5で選択してください</string>
+
+    <string name="reviewDialogTitle">ありがとうございます</string>
+    <string name="reviewRequestText">よろしければストアでも評価を投稿いただけませんでしょうか。</string>
+    <string name="reviewButton">ストアで評価する</string>
+    <string name="reviewCancelButton">断る</string>
+
+    <string name="feedbackDialogTitle">ありがとうございます</string>
+    <string name="feedbackRequestText">アプリの改善に役立ててまいりますので、ご意見・ご要望がありましたらフィードバックをお寄せ下さい。</string>
+    <string name="feedbackButton">フィードバックする</string>
+    <string name="feedbackCancelButton">断る</string>
+    <string name="feedbackWebPageUrl">https://example.com</string>
+    <string name="anotherFeedbackWay"></string>
+</resources>

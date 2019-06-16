@@ -1,0 +1,18 @@
+<resources>
+    <string name="rateDialogTitle">Tell us your satisfaction</string>
+    <string name="rateButton">Send</string>
+    <string name="rateCancelButton">Dismiss</string>
+    <string name="rateAtLeastOneStar">Please select at least one star</string>
+
+    <string name="reviewDialogTitle">Thank you</string>
+    <string name="reviewRequestText">Could you register your satisfaction at GooglePlay?</string>
+    <string name="reviewButton">Review at GooglePlay</string>
+    <string name="reviewCancelButton">Dismiss</string>
+
+    <string name="feedbackDialogTitle">Thank you</string>
+    <string name="feedbackRequestText">If you have any comments or requests, please send us feedback.</string>
+    <string name="feedbackButton">Feedback</string>
+    <string name="feedbackCancelButton">Dismiss</string>
+    <string name="feedbackWebPageUrl">https://example.com</string>
+    <string name="anotherFeedbackWay"></string>
+</resources>
