@@ -19,7 +19,7 @@ If you don't have a web page to collect user feedback, I recommend you to create
 
 # Install
 
-1. Add repository to your project level build.gradle.
+1. Add repository to your application level build.gradle.
 
     ```groovy
     repositories {
@@ -28,6 +28,8 @@ If you don't have a web page to collect user feedback, I recommend you to create
         }
     }
     ```
+
+    If you get some error, confirm that the above description is written to application level build.gradle (NOT project level).
 
 2. Add dependencies to your application level build.gradle.
 
