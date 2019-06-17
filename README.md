@@ -41,12 +41,13 @@ If you don't have a web page to collect user feedback, I recommend you to create
 
 # Usage
 
-## Get Instance
+## Get Instance and Set Required Parameter
 
-The only class you need to consider is ReviewRequestManager. You can get the singleton instance with
+The only class you need to consider is ReviewRequestManager. You can get the singleton instance and set required parameter with below code.
 
 ```java
 final ReviewRequestManager manager = ReviewRequestManager.getInstance(context);
+manager.setFeedbackWebPageUrl("Set your feedback web page url");
 ```
 
 Notice that ```ReviewRequestManager#getInstance()``` returns null if you have never called ```ReviewRequestManager#getInstance(Context)``` before.
