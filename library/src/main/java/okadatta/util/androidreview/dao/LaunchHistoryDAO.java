@@ -78,6 +78,7 @@ public class LaunchHistoryDAO {
             isNotEoF = cursor.moveToNext();
         }
         cursor.close();
+        database.close();
 
         return count;
     }
@@ -105,6 +106,7 @@ public class LaunchHistoryDAO {
             isNotEoF = cursor.moveToNext();
         }
         cursor.close();
+        database.close();
 
         return ret;
     }
