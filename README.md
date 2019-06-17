@@ -128,9 +128,6 @@ ReviewRequestManager.getInstance()
                     .setFeedbackByAnotherWayExplanation("If you have another way to access feedback url in your application, explain that here to notify user via Toast");
 ```
 
-All these messages are also able to be replaced from it's default via ```strings.xml```.
-See source code for each String resource name.
-
 # Contribute
 
 Your contribution is really appreciated.
