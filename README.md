@@ -35,7 +35,7 @@ If you don't have a web page to collect user feedback, I recommend you to create
 
     ```groovy
     dependencies {
-      implementation 'okadatta.util:android-review:1.0.0'
+      implementation 'okadatta.util:android-review:1.0.1'
     }
     ```
 
