@@ -88,10 +88,6 @@ public class ReviewRequestManager {
         return singleton;
     }
 
-    public void registerLaunchHistory(Context context) {
-        LaunchHistoryDAO.registerLaunchHistory(context);
-    }
-
     public void requestReview(Activity activity){
 
         // Check history of jumping to GooglePlay
