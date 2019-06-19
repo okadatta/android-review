@@ -90,9 +90,14 @@ public class RateDialogFragment extends DialogFragment {
                             // Close dialog
                             dismiss();
 
-                            // Request sending feedback
-                            FeedbackDialogFragment fragment = new FeedbackDialogFragment();
-                            fragment.show(getFragmentManager(), "feedback");
+                            // Request feedback
+                            String feedbackUrl = ReviewRequestManager.getInstance().getFeedbackWebPageUrl();
+                            if (feedbackUrl != null) {
+                                if (!"".equals(feedbackUrl)) {
+                                    FeedbackDialogFragment fragment = new FeedbackDialogFragment();
+                                    fragment.show(getFragmentManager(), "feedback");
+                                }
+                            }
 
                         }
                     }

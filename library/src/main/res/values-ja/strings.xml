@@ -13,6 +13,6 @@
     <string name="feedbackRequestText">アプリの改善に役立ててまいりますので、ご意見・ご要望がありましたらフィードバックをお寄せ下さい。</string>
     <string name="feedbackButton">フィードバックする</string>
     <string name="feedbackCancelButton">断る</string>
-    <string name="feedbackWebPageUrl">https://example.com</string>
+    <string name="feedbackWebPageUrl"></string>
     <string name="anotherFeedbackWay"></string>
 </resources>

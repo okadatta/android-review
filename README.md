@@ -14,7 +14,8 @@ Of course, you can control when your app request review by some settings. Also, 
 
 # Preparation
 
-This library requires feedback web page url that will be shown when a user give low rate to your app.
+With this library, you can request a user to give feedback when the user gave low rate at the initial rating dialog.
+If you want to activate this feature, you need to set a url of feedback web page url by the setter method.
 If you don't have a web page to collect user feedback, I recommend you to create one using [Google Forms](https://docs.google.com/forms/) before installing this library.
 
 # Install
@@ -35,19 +36,21 @@ If you don't have a web page to collect user feedback, I recommend you to create
 
     ```groovy
     dependencies {
-      implementation 'okadatta.util:android-review:1.0.2'
+      implementation 'okadatta.util:android-review:1.1.0'
     }
     ```
 
 # Usage
 
-## Get Instance and Set Required Parameter
+## Get Instance
 
-The only class you need to consider is ReviewRequestManager. You can get the singleton instance and set required parameter with below code.
+The only class you need to consider is ReviewRequestManager. You can get the singleton instance with below code.
 
 ```java
 final ReviewRequestManager manager = ReviewRequestManager.getInstance(context);
-manager.setFeedbackWebPageUrl("Set your feedback web page url");
+
+// Set your feedback web page url if you want to activate feedback feature
+manager.setFeedbackWebPageUrl("https://github.com/okadatta/android-review/");
 ```
 
 Notice that ```ReviewRequestManager#getInstance()``` returns null if you have never called ```ReviewRequestManager#getInstance(Context)``` before.
@@ -60,23 +63,6 @@ Just pass a FirerbaseAnalytics instance when you get a instance of ReviewRequest
 ```java
 FirebaseAnalytics firebaseAnalytics = FirebaseAnalytics.getInstance(context);
 final ReviewRequestManager manager = ReviewRequestManager.getInstance(context, firebaseAnalytics);
-```
-
-## Register App's Launch History
-
-You just need to call method ```ReviewRequestManager#registerLaunchHistory(Context)```. All history information is recorded automatically.
-
-```java
-public class MainActivity extends Activity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        // Record Launch History
-        final ReviewRequestManager manager = ReviewRequestManager.getInstance(this);
-        manager.registerLaunchHistory(this);
 ```
 
 ## Request Review

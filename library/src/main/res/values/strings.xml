@@ -13,6 +13,6 @@
     <string name="feedbackRequestText">If you have any comments or requests, please send us feedback.</string>
     <string name="feedbackButton">Feedback</string>
     <string name="feedbackCancelButton">Dismiss</string>
-    <string name="feedbackWebPageUrl">https://example.com</string>
+    <string name="feedbackWebPageUrl"></string>
     <string name="anotherFeedbackWay"></string>
 </resources>

@@ -42,6 +42,8 @@ public class ReviewRequestManager {
     private String feedbackByAnotherWayExplanation;
 
     private ReviewRequestManager(Context context) {
+        LaunchHistoryDAO.registerLaunchHistory(context);
+
         rateDialogTitle = context.getResources().getString(R.string.rateDialogTitle);
         rateButtonText = context.getResources().getString(R.string.rateButton);
         rateCancelButtonText = context.getResources().getString(R.string.rateCancelButton);

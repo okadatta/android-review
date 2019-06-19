@@ -18,17 +18,17 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 1. Register Launch History
+        // 1. Get instance
         final ReviewRequestManager manager = ReviewRequestManager.getInstance(this);
-        manager.registerLaunchHistory(this);
 
-        // 2. Set preferrences
+        // 2. Set preferences
         manager.setLaunchCountThreshold(0)
                 .setDaysSinceFirstLaunch(0)
                 .setRecentLaunchesCount(1)
                 .setDaysForCountRecentLaunches(1)
                 .setDaysSinceLastReviewRequest(0)
-                .setDaysSinceLastReview(0);
+                .setDaysSinceLastReview(0)
+                .setFeedbackWebPageUrl("https://github.com/okadatta/android-review/");
 
         // 3. Call ReviewRequestManager.requestReview() at anywhere you want to request review
         findViewById(R.id.requestReview).setOnClickListener(new View.OnClickListener() {
